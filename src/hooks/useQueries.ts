@@ -4,7 +4,7 @@ import { useQuery } from '@tanstack/react-query';
 
 // Import static JSON data files
 import contactDetailsData from '../data/contactDetails.json';
-import blogSummariesData from '../data/blogSummaries.json';
+// import blogSummariesData from '../data/blogSummaries.json';
 import companyComparisonData from '../data/companyComparison.json';
 import productsData from '../data/products.json';
 import impactPointsData from '../data/impactPoints.json';

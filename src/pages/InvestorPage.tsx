@@ -243,14 +243,14 @@ export default function InvestorPage() {
               <Button
                 type="primary"
                 size="large"
-                style={{ backgroundColor: 'white', color: '#389e0d', border: 'none' }}
+                style={{ backgroundColor: 'white', color: 'black', border: 'none' }}
                 onClick={() => navigate({ to: '/contact' })}
               >
                 Download Investor Brief
               </Button>
               <Button
                 size="large"
-                style={{ borderColor: 'white', color: 'white' }}
+                style={{ borderColor: 'white', color: 'black' }}
                 onClick={() => navigate({ to: '/contact' })}
               >
                 Talk to Our Team

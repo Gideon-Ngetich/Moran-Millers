@@ -5,7 +5,7 @@ import { useContactDetails } from '../hooks/useQueries';
 const { Title, Text, Paragraph } = Typography;
 
 export default function ContactPage() {
-  const { data: contactDetails, isLoading: contactLoading } = useContactDetails();
+  const { isLoading: contactLoading } = useContactDetails();
 
   return (
     <ConfigProvider
@@ -69,7 +69,7 @@ export default function ContactPage() {
                       </div>
                       <div>
                         <Title level={4}>Visit Us</Title>
-                        <Paragraph type="secondary">{contactDetails?.address}</Paragraph>
+                        <Paragraph type="secondary">P.O. Box 44231 – 00100 Nairobi</Paragraph>
                       </div>
                     </Space>
                   </Card>
@@ -94,7 +94,7 @@ export default function ContactPage() {
                       <div>
                         <Title level={4}>Call Us</Title>
                         <Paragraph type="secondary">
-                          <a href={`tel:${contactDetails?.phone}`}>{contactDetails?.phone}</a>
+                          <a href=''>+254 700 281 281</a>
                         </Paragraph>
                       </div>
                     </Space>
@@ -120,7 +120,7 @@ export default function ContactPage() {
                       <div>
                         <Title level={4}>Email Us</Title>
                         <Paragraph type="secondary">
-                          <a href={`mailto:${contactDetails?.email}`}>{contactDetails?.email}</a>
+                          <a href={`mailto: millersmoran@gmail.com`}>millersmoran@gmail.com</a>
                         </Paragraph>
                       </div>
                     </Space>

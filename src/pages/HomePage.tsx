@@ -4,17 +4,20 @@ import {
   TrophyOutlined,
   TeamOutlined,
   EnvironmentOutlined,
-  PhoneOutlined,
-  MailOutlined,
+//   PhoneOutlined,
+//   MailOutlined,
 } from '@ant-design/icons';
-import { SlLocationPin } from "react-icons/sl";
-import { useContactDetails } from '../hooks/useQueries';
-
-const { Title, Text, Paragraph } = Typography;
+// import { SlLocationPin } from "react-icons/sl";
+// import { useContactDetails } from '../hooks/useQueries';
+import Packet from '../assets/Packet.jpeg'
+import Sifted_maizeflour from '../assets/Gemini_Generated_Image_4errvo4errvo4err.png'
+import MilletFlour from "../assets/millet_flour.png"
+import ujiMix from '../assets/ujiMix.png'
+const { Title, Paragraph } = Typography;
 
 export default function HomePage() {
   const navigate = useNavigate();
-  const { data: contactDetails } = useContactDetails();
+//   const { data: contactDetails } = useContactDetails();
 
   return (
     <ConfigProvider
@@ -45,7 +48,7 @@ export default function HomePage() {
                   <Paragraph style={{ fontSize: '1.25rem', color: '#666666' }}>
                     Nourishing families with certified quality flour while empowering communities through sustainable milling practices.
                   </Paragraph>
-                  <Space size="middle">
+                  {/* <Space size="middle">
                     <Button
                       type="primary"
                       size="large"
@@ -57,12 +60,12 @@ export default function HomePage() {
                     <Button size="large" onClick={() => navigate({ to: '/contact' })}>
                       Partner With Us
                     </Button>
-                  </Space>
+                  </Space> */}
                 </Space>
               </Col>
-              <Col xs={24} lg={12}>
+              <Col xs={20} lg={12}>
                 <img
-                  src="/assets/generated/hero-grains.dim_1200x600.jpg"
+                  src={Packet}
                   alt="Premium grains"
                   style={{
                     width: '100%',
@@ -158,7 +161,7 @@ export default function HomePage() {
         </section>
 
         {/* Contact Banner */}
-        <section
+        {/* <section
           style={{
             background: 'linear-gradient(to right, #389e0d, rgba(56, 158, 13, 0.8))',
             padding: '64px 0',
@@ -208,7 +211,7 @@ export default function HomePage() {
               </Col>
             </Row>
           </div>
-        </section>
+        </section> */}
 
         {/* Featured Products Preview */}
         <section style={{ padding: '96px 0' }}>
@@ -227,7 +230,7 @@ export default function HomePage() {
                   cover={
                     <img
                       alt="Sifted Maize Flour"
-                      src="/assets/generated/maize-flour-product.dim_400x400.jpg"
+                      src={Sifted_maizeflour}
                       style={{ height: 200, objectFit: 'cover' }}
                     />
                   }
@@ -245,7 +248,7 @@ export default function HomePage() {
                   cover={
                     <img
                       alt="Millet Flour"
-                      src="/assets/generated/millet-flour-product.dim_400x400.jpg"
+                      src={MilletFlour}
                       style={{ height: 200, objectFit: 'cover' }}
                     />
                   }
@@ -263,7 +266,7 @@ export default function HomePage() {
                   cover={
                     <img
                       alt="Moran Uji Mix"
-                      src="/assets/generated/uji-mix-product.dim_400x400.jpg"
+                      src={ujiMix}
                       style={{ height: 200, objectFit: 'cover' }}
                     />
                   }

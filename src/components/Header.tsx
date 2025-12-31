@@ -2,6 +2,7 @@ import { Link, useNavigate } from '@tanstack/react-router';
 import { Button, ConfigProvider, Drawer, Layout, Menu, Space, Typography } from 'antd';
 import { MenuOutlined } from '@ant-design/icons';
 import { useState } from 'react';
+import logo from '../assets/logo.jpeg'
 
 const { Header } = Layout;
 const { Text } = Typography;
@@ -57,7 +58,7 @@ export default function HeaderComponent() {
         {/* Logo */}
         <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
           <img
-            src="/assets/generated/moran-logo-transparent.dim_200x200.png"
+            src={logo}
             alt="Moran Millers"
             style={{ height: 48, width: 48 }}
           />
@@ -81,7 +82,7 @@ export default function HeaderComponent() {
           overflowedIndicator={null}
         />
 
-        <Space style={{ display: 'none' }} className="desktop-menu">
+        {/* <Space style={{ display: 'none' }} className="desktop-menu">
           <Button type="default" onClick={() => navigate({ to: '/contact' })}>
             Get Quote
           </Button>
@@ -92,7 +93,7 @@ export default function HeaderComponent() {
           >
             Shop Wholesale
           </Button>
-        </Space>
+        </Space> */}
 
         {/* Mobile Menu Trigger */}
         <Button

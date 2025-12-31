@@ -1,6 +1,10 @@
 import { useNavigate } from '@tanstack/react-router';
 import { Button, Card, Col, ConfigProvider, Row, Space, Tag, Typography, Avatar } from 'antd';
 import { CheckCircleOutlined } from '@ant-design/icons';
+// import Sifted_maizeflour from '../assets/Gemini_Generated_Image_4errvo4errvo4err.png'
+// import MilletFlour from "../assets/millet_flour.png"
+import ujiMix from '../assets/ujiMix.png'
+// import bale from '../assets/bale2.jpeg'
 
 const { Title, Text, Paragraph } = Typography;
 
@@ -97,7 +101,7 @@ export default function InnovationPage() {
               <Col xs={24} lg={12}>
                 <div style={{ position: 'relative' }}>
                   <img
-                    src="/assets/generated/uji-mix-product.dim_400x400.jpg"
+                    src={ujiMix}
                     alt="Moran Uji Mix"
                     style={{
                       width: '100%',
@@ -105,7 +109,7 @@ export default function InnovationPage() {
                       boxShadow: '0 20px 40px rgba(0,0,0,0.15)',
                     }}
                   />
-                  <div
+                  {/* <div
                     style={{
                       position: 'absolute',
                       bottom: -24,
@@ -124,7 +128,7 @@ export default function InnovationPage() {
                     <Title level={1} style={{ margin: 0, color: 'white' }}>
                       2025
                     </Title>
-                  </div>
+                  </div> */}
                 </div>
               </Col>
             </Row>

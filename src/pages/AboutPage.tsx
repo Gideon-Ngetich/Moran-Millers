@@ -1,14 +1,14 @@
-import { useNavigate } from '@tanstack/react-router';
-import { Card, Col, ConfigProvider, Row, Space, Typography, List, Avatar } from 'antd';
-import { useContactDetails, useLeadershipBios, useDailySchedule } from '../hooks/useQueries';
+// import { useNavigate } from '@tanstack/react-router';
+import { Col, ConfigProvider, Row, Space, Typography} from 'antd';
+// import { useContactDetails, useLeadershipBios, useDailySchedule } from '../hooks/useQueries';
 
 const { Title, Paragraph } = Typography;
 
 export default function AboutPage() {
-  const navigate = useNavigate();
-  const { data: contactDetails } = useContactDetails();
-  const { data: leadership } = useLeadershipBios();
-  const { data: schedule } = useDailySchedule();
+//   const navigate = useNavigate();
+//   const { data: contactDetails } = useContactDetails();
+//   const { data: leadership } = useLeadershipBios();
+//   const { data: schedule } = useDailySchedule();
 
   return (
     <ConfigProvider
@@ -69,7 +69,7 @@ export default function AboutPage() {
         </section>
 
         {/* Leadership Team */}
-        <section style={{ padding: '96px 0', backgroundColor: '#f9f9f9' }}>
+        {/* <section style={{ padding: '96px 0', backgroundColor: '#f9f9f9' }}>
           <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 24px' }}>
             <Title level={2} style={{ textAlign: 'center', marginBottom: 64 }}>
               Our Leadership Team
@@ -101,10 +101,10 @@ export default function AboutPage() {
               ))}
             </Row>
           </div>
-        </section>
+        </section> */}
 
         {/* Daily Operations */}
-        <section style={{ padding: '96px 0' }}>
+        {/* <section style={{ padding: '96px 0' }}>
           <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 24px' }}>
             <Title level={2} style={{ textAlign: 'center', marginBottom: 32 }}>
               Our Daily Operations
@@ -136,7 +136,7 @@ export default function AboutPage() {
               </Col>
             </Row>
           </div>
-        </section>
+        </section> */}
 
         {/* Market Context */}
         <section

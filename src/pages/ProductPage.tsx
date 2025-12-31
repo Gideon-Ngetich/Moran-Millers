@@ -1,6 +1,9 @@
 import { useNavigate } from '@tanstack/react-router';
 import { Button, Card, Col, ConfigProvider, Row, Space, Typography } from 'antd';
 import { useProducts } from '../hooks/useQueries';
+import Sifted_maizeflour from '../assets/Gemini_Generated_Image_4errvo4errvo4err.png'
+import MilletFlour from "../assets/millet_flour.png"
+import ujiMix from '../assets/ujiMix.png'
 
 const { Title, Paragraph } = Typography;
 
@@ -10,12 +13,12 @@ export default function ProductsPage() {
 
   const getProductImage = (name: string) => {
     if (name.includes('Maize Flour')) {
-      return '/assets/generated/maize-flour-product.dim_400x400.jpg';
+      return Sifted_maizeflour;
     }
     if (name.includes('Millet')) {
-      return '/assets/generated/millet-flour-product.dim_400x400.jpg';
+      return MilletFlour;
     }
-    return '/assets/generated/uji-mix-product.dim_400x400.jpg';
+    return ujiMix;
   };
 
   return (
@@ -133,13 +136,7 @@ export default function ProductsPage() {
               >
                 Request a Quote
               </Button>
-              <Button
-                size="large"
-                style={{ borderColor: 'white', color: 'white' }}
-                onClick={() => navigate({ to: '/contact' })}
-              >
-                Place Wholesale Order
-              </Button>
+            
             </Space>
           </div>
         </section>

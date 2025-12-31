@@ -17,6 +17,8 @@ import {
 } from '@ant-design/icons';
 import { FiTarget } from "react-icons/fi";
 import { useImpactPoints } from '../hooks/useQueries';
+import bale from '../assets/bale2.jpeg'
+import farmers from '../assets/farmers.webp'
 
 const { Title, Text, Paragraph } = Typography;
 
@@ -117,7 +119,7 @@ export default function ImpactPage() {
                         <Row gutter={[48, 48]} align="middle">
                             <Col xs={24} lg={12}>
                                 <img
-                                    src="/assets/generated/sustainable-milling.dim_800x600.jpg"
+                                    src={bale}
                                     alt="Sustainable Milling"
                                     style={{ width: '100%', borderRadius: 12, boxShadow: '0 10px 30px rgba(0,0,0,0.1)' }}
                                 />
@@ -161,7 +163,7 @@ export default function ImpactPage() {
                         <Row gutter={[48, 48]} align="middle">
                             <Col xs={24} lg={12} push={12}>
                                 <img
-                                    src="/assets/generated/farmers-community.dim_800x600.jpg"
+                                    src={farmers}
                                     alt="Farmers Community"
                                     style={{ width: '100%', borderRadius: 12, boxShadow: '0 10px 30px rgba(0,0,0,0.1)' }}
                                 />
@@ -244,14 +246,14 @@ export default function ImpactPage() {
                             <Button
                                 type="primary"
                                 size="large"
-                                style={{ backgroundColor: 'white', color: '#389e0d', border: 'none' }}
+                                style={{ backgroundColor: 'white', color: 'black', border: 'none' }}
                                 onClick={() => navigate({ to: '/contact' })}
                             >
                                 Get Involved
                             </Button>
                             <Button
                                 size="large"
-                                style={{ borderColor: 'white', color: 'white' }}
+                                style={{ borderColor: 'white', color: 'black' }}
                                 onClick={() => navigate({ to: '/about' })}
                             >
                                 Learn More About Us
