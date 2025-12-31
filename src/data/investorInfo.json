@@ -1,0 +1,18 @@
+{
+  "fundingGoal": "KES 20,000,000",
+  "matchingFundsTarget": "EUR 100,000 (owners’ equity + external investors)",
+  "useOfFunds": [
+    { "item": "Milling equipment", "amount": "KES 2,000,000" },
+    { "item": "Storage expansion", "amount": "KES 3,000,000" },
+    { "item": "Huller engine", "amount": "KES 1,500,000" },
+    { "item": "Premises improvements", "amount": "KES 1,000,000" },
+    { "item": "Distribution vehicles", "amount": "KES 2,000,000" },
+    { "item": "Working capital", "amount": "KES 2,500,000" }
+  ],
+  "financialOutlook": [
+    { "year": 2025, "revenue": "KES 5,000,000", "netProfit": "KES 1,030,000" },
+    { "year": 2026, "revenue": "KES 6,500,000", "netProfit": "KES 1,400,000" },
+    { "year": 2027, "revenue": "KES 8,000,000", "netProfit": "KES 1,800,000" }
+  ],
+  "impactThesis": "Your capital helps scale production, create jobs, empower farmers, and expand affordable nutrition."
+}

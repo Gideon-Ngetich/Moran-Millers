@@ -1,0 +1,16 @@
+[
+  {
+    "company": "Moran Millers",
+    "quality": 5,
+    "innovation": 5,
+    "sustainability": 5,
+    "goToMarket": 4
+  },
+  {
+    "company": "Ajab",
+    "quality": 5,
+    "innovation": 3,
+    "sustainability": 4,
+    "goToMarket": 5
+  }
+]

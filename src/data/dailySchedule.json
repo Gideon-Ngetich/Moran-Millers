@@ -1,0 +1,14 @@
+[
+  {
+    "time": "07:00",
+    "activity": "Loading, fueling, truck cleaning, stock checks, and morning safety briefings"
+  },
+  {
+    "time": "08:30–16:30",
+    "activity": "Sales activities and dispatch"
+  },
+  {
+    "time": "17:00–17:30",
+    "activity": "Reconciliation and security checks"
+  }
+]
