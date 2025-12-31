@@ -1,32 +1,32 @@
-import { useNavigate } from '@tanstack/react-router';
+// import { useNavigate } from '@tanstack/react-router';
 import {
-    Button,
-    Card,
-    Col,
-    ConfigProvider,
+    // Button,
+    // Card,
+    // Col,
+    // ConfigProvider,
     Empty,
-    Row,
-    Skeleton,
+    // Row,
+    // Skeleton,
     Space,
     Typography,
 } from 'antd';
-import { CalendarOutlined } from '@ant-design/icons';
+// import { CalendarOutlined } from '@ant-design/icons';
 // import { useBlogSummaries } from '../hooks/useQueries';
 
 const { Title, Text } = Typography;
 
 export default function BlogPage() {
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
     // const { data: blogSummaries, isLoading } = useBlogSummaries();
 
-    const formatDate = (timestamp: bigint) => {
-        const date = new Date(Number(timestamp) / 1000000);
-        return date.toLocaleDateString('en-US', {
-            year: 'numeric',
-            month: 'long',
-            day: 'numeric',
-        });
-    };
+    // const formatDate = (timestamp: bigint) => {
+    //     const date = new Date(Number(timestamp) / 1000000);
+    //     return date.toLocaleDateString('en-US', {
+    //         year: 'numeric',
+    //         month: 'long',
+    //         day: 'numeric',
+    //     });
+    // };
 
     return (
         // <ConfigProvider
