@@ -1,0 +1,39 @@
+[
+  {
+    "id": "maize-grade1",
+    "name": "Sifted Maize Flour (Grade 1)",
+    "description": "Refined, consistent premium Grade 1 maize flour under the brand 'Moran'.",
+    "packs": ["0.5kg", "1kg", "2kg", "5kg", "10kg", "45kg", "50kg"]
+  },
+  {
+    "id": "maize-grade2",
+    "name": "Whole Maize Meal (Grade 2)",
+    "description": "Nutrient-rich whole maize meal.",
+    "packs": ["1kg", "2kg", "5kg", "10kg", "50kg"]
+  },
+  {
+    "id": "millet-flour",
+    "name": "Millet Flour",
+    "description": "Ideal for porridge, gluten-friendly millet flour.",
+    "packs": ["0.5kg", "1kg", "2kg", "5kg", "10kg"]
+  },
+  {
+    "id": "animal-feed",
+    "name": "Animal Feed Byproducts",
+    "description": "Nutritious maize bran & germ repurposed from milling.",
+    "packs": ["50kg", "90kg"]
+  },
+  {
+    "id": "uji-mix",
+    "name": "Moran Uji Mix",
+    "description": "Nutritious millet porridge blend – rich in fiber and minerals, convenient for health-conscious families.",
+    "packs": ["0.5kg", "1kg", "2kg", "5kg", "10kg"],
+    "featured": true
+  },
+  {
+    "id": "custom-milling",
+    "name": "Custom Milling",
+    "description": "Custom milling services for farmers & traders (on request).",
+    "packs": []
+  }
+]
