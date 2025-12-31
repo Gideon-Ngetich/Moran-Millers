@@ -1,6 +1,6 @@
 import { useNavigate } from '@tanstack/react-router';
 import { Button, Card, Col, ConfigProvider, Row, Space, Typography } from 'antd';
-import { useProducts } from '@/hooks/useQueries';
+import { useProducts } from '../hooks/useQueries';
 
 const { Title, Paragraph } = Typography;
 

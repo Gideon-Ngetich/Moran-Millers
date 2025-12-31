@@ -5,14 +5,9 @@ import {
   Card,
   Col,
   ConfigProvider,
-  Divider,
   List,
-  Rate,
   Row,
-  Skeleton,
   Space,
-  Table,
-  Tag,
   Typography,
 } from 'antd';
 import {
@@ -56,58 +51,58 @@ export default function CompetitivePage() {
     },
   ];
 
-  const columns = [
-    {
-      title: 'Company',
-      dataIndex: 'company',
-      key: 'company',
-      render: (text: string, _record: any) => (
-        <Space>
-          <Text strong>{text}</Text>
-          {text === 'Moran Millers' && <Tag color="success">Us</Tag>}
-        </Space>
-      ),
-    },
-    {
-      title: 'Quality',
-      dataIndex: 'quality',
-      key: 'quality',
-      align: 'center' as const,
-      render: (value: string) => (
-        <Rate
-          disabled
-          defaultValue={Number(value)}
-          style={{ fontSize: 14, color: '#389e0d' }}
-        />
-      ),
-    },
-    {
-      title: 'Innovation',
-      dataIndex: 'innovation',
-      key: 'innovation',
-      align: 'center' as const,
-      render: (value: string) => (
-        <Rate
-          disabled
-          defaultValue={Number(value)}
-          style={{ fontSize: 14, color: '#fa541c' }}
-        />
-      ),
-    },
-    {
-      title: 'Sustainability',
-      dataIndex: 'sustainability',
-      key: 'sustainability',
-      align: 'center' as const,
-      render: (value: string) => (
-        <Rate
-          disabled
-          defaultValue={Number(value)}
-          style={{ fontSize: 14, color: '#faad14' }}
-        />
-      ),
-    },
-  ];
+//   const columns = [
+//     {
+//       title: 'Company',
+//       dataIndex: 'company',
+//       key: 'company',
+//       render: (text: string, _record: any) => (
+//         <Space>
+//           <Text strong>{text}</Text>
+//           {text === 'Moran Millers' && <Tag color="success">Us</Tag>}
+//         </Space>
+//       ),
+//     },
+//     {
+//       title: 'Quality',
+//       dataIndex: 'quality',
+//       key: 'quality',
+//       align: 'center' as const,
+//       render: (value: string) => (
+//         <Rate
+//           disabled
+//           defaultValue={Number(value)}
+//           style={{ fontSize: 14, color: '#389e0d' }}
+//         />
+//       ),
+//     },
+//     {
+//       title: 'Innovation',
+//       dataIndex: 'innovation',
+//       key: 'innovation',
+//       align: 'center' as const,
+//       render: (value: string) => (
+//         <Rate
+//           disabled
+//           defaultValue={Number(value)}
+//           style={{ fontSize: 14, color: '#fa541c' }}
+//         />
+//       ),
+//     },
+//     {
+//       title: 'Sustainability',
+//       dataIndex: 'sustainability',
+//       key: 'sustainability',
+//       align: 'center' as const,
+//       render: (value: string) => (
+//         <Rate
+//           disabled
+//           defaultValue={Number(value)}
+//           style={{ fontSize: 14, color: '#faad14' }}
+//         />
+//       ),
+//     },
+//   ];
 
   const partnerBenefits = [
     'Consistent Quality: Every batch meets strict quality standards, ensuring your customers receive the best products',
