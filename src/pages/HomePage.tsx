@@ -6,9 +6,9 @@ import {
   EnvironmentOutlined,
   PhoneOutlined,
   MailOutlined,
-  LocationFilled,
 } from '@ant-design/icons';
-import { useContactDetails } from '@/hooks/useQueries';
+import { SlLocationPin } from "react-icons/sl";
+import { useContactDetails } from '../hooks/useQueries';
 
 const { Title, Text, Paragraph } = Typography;
 
@@ -169,7 +169,7 @@ export default function HomePage() {
             <Row gutter={[48, 32]}>
               <Col xs={24} md={8}>
                 <Space size="middle">
-                  <LocationFilled style={{ fontSize: 28 }} />
+                  <SlLocationPin style={{ fontSize: 28 }} />
                   <div>
                     <Text strong style={{ color: 'white', display: 'block' }}>
                       Location

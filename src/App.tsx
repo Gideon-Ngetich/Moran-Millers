@@ -1,8 +1,8 @@
 import { RouterProvider, createRouter, createRoute, createRootRoute } from '@tanstack/react-router';
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+// import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
-import ProductsPage from './pages/';
+import ProductsPage from './pages/ProductPage';
 import InnovationPage from './pages/InnovationPage'
 import ImpactPage from './pages/ImpactPage';
 import CompetitivePage from './pages/CompetitivePage';

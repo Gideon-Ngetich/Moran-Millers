@@ -15,13 +15,13 @@ import {
   DollarOutlined,
   TeamOutlined,
 } from '@ant-design/icons';
-import { useInvestorInfo } from '@/hooks/useQueries';
+// import { useInvestorInfo } from '../hooks/useQueries';
 
 const { Title, Paragraph } = Typography;
 
 export default function InvestorPage() {
   const navigate = useNavigate();
-  const { data: investorInfo, isLoading } = useInvestorInfo();
+//   const { data: investorInfo, isLoading } = useInvestorInfo();
 
   return (
     <ConfigProvider
@@ -51,20 +51,19 @@ export default function InvestorPage() {
         </section>
 
         {/* Investment Opportunity */}
-        <section style={{ padding: '96px 0' }}>
+        {/* <section style={{ padding: '96px 0' }}>
           <div style={{ maxWidth: '1024px', margin: '0 auto', padding: '0 24px' }}>
             <Title level={2} style={{ textAlign: 'center', marginBottom: 48 }}>
               Investment Opportunity
             </Title>
 
             {isLoading ? (
-              <Space direction="vertical" size="large" style={{ width: '100%' }}>
+              <Space orientation="vertical" size="large" style={{ width: '100%' }}>
                 <Card loading />
                 <Card loading />
               </Space>
             ) : investorInfo ? (
-              <Space direction="vertical" size="large" style={{ width: '100%' }}>
-                {/* Funding Goal Card */}
+              <Space orientation="vertical" size="large" style={{ width: '100%' }}>
                 <Card
                   hoverable
                   style={{ borderColor: 'rgba(56, 158, 13, 0.2)' }}
@@ -87,7 +86,6 @@ export default function InvestorPage() {
                   </Space>
                 </Card>
 
-                {/* Financial Outlook */}
                 <Card hoverable>
                   <Title level={4}>Financial Outlook (2025-2027)</Title>
                   <Paragraph type="secondary" style={{ whiteSpace: 'pre-line' }}>
@@ -95,7 +93,6 @@ export default function InvestorPage() {
                   </Paragraph>
                 </Card>
 
-                {/* Use of Funds */}
                 <Card hoverable>
                   <Title level={4}>Use of Funds</Title>
                   <Paragraph type="secondary" style={{ whiteSpace: 'pre-line' }}>
@@ -115,7 +112,7 @@ export default function InvestorPage() {
               </Card>
             )}
           </div>
-        </section>
+        </section> */}
 
         {/* Investment Highlights */}
         <section style={{ padding: '96px 0', backgroundColor: '#f9f9f9' }}>
@@ -126,7 +123,7 @@ export default function InvestorPage() {
             <Row gutter={[32, 32]}>
               <Col xs={24} md={12} lg={6}>
                 <Card hoverable>
-                  <Space direction="vertical" size="middle">
+                  <Space orientation="vertical" size="middle">
                     <Avatar
                       size={48}
                       icon={<RiseOutlined />}
@@ -142,7 +139,7 @@ export default function InvestorPage() {
 
               <Col xs={24} md={12} lg={6}>
                 <Card hoverable>
-                  <Space direction="vertical" size="middle">
+                  <Space orientation="vertical" size="middle">
                     <Avatar
                       size={48}
                       icon={<AimOutlined />}
@@ -158,7 +155,7 @@ export default function InvestorPage() {
 
               <Col xs={24} md={12} lg={6}>
                 <Card hoverable>
-                  <Space direction="vertical" size="middle">
+                  <Space orientation="vertical" size="middle">
                     <Avatar
                       size={48}
                       icon={<DollarOutlined />}
@@ -174,7 +171,7 @@ export default function InvestorPage() {
 
               <Col xs={24} md={12} lg={6}>
                 <Card hoverable>
-                  <Space direction="vertical" size="middle">
+                  <Space orientation="vertical" size="middle">
                     <Avatar
                       size={48}
                       icon={<TeamOutlined />}
@@ -197,7 +194,7 @@ export default function InvestorPage() {
             <Title level={2} style={{ textAlign: 'center', marginBottom: 48 }}>
               Our Growth Strategy
             </Title>
-            <Space direction="vertical" size="large" style={{ width: '100%' }}>
+            <Space orientation="vertical" size="large" style={{ width: '100%' }}>
               <Card hoverable>
                 <Title level={4}>Phase 1: Capacity Expansion</Title>
                 <Paragraph type="secondary">

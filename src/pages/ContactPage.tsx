@@ -1,11 +1,11 @@
 import { Card, Col, ConfigProvider, Row, Space, Typography } from 'antd';
 import { MailOutlined, PhoneOutlined, EnvironmentOutlined } from '@ant-design/icons';
-// import { useContactDetails } from '@/hooks/useQueries';
+import { useContactDetails } from '../hooks/useQueries';
 
 const { Title, Text, Paragraph } = Typography;
 
 export default function ContactPage() {
-//   const { data: contactDetails, isLoading: contactLoading } = useContactDetails();
+  const { data: contactDetails, isLoading: contactLoading } = useContactDetails();
 
   return (
     <ConfigProvider
